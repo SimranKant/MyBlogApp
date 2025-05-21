@@ -1,0 +1,25 @@
+<%- include("includes/nav.ejs") %>
+<body class="d-flex flex-column min-vh-100">
+  <div class="container flex-grow-1">
+    <div class="card">
+    <div class="card-header">
+        <h2 class="card-title"><%= blog.title %></h2>
+    </div>
+    <div class="card-body">
+      <h4>By <%= blog.username %></h4>
+      <p class="card-text"><%= blog.content %></p>
+    </div>
+    <div class="card-footer d-flex gap-2">
+      <a href="/blog/<%= blog.id %>/edit" class="btn btn-primary">Edit</a>
+      <form method="post" action="/blog/<%= blog.id %>?_method=DELETE">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+      <a href="/blog" class="btn btn-secondary ms-auto" style="background-color: black;">Back to All Blogs</a>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+<%- include("includes/footer.ejs") %>

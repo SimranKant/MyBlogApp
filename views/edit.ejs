@@ -1,0 +1,26 @@
+<%- include("includes/nav.ejs") %>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container flex-grow-1">
+      <div class="card">
+        <div class="card-header">
+          <b>Edit your Blog</b>
+        </div>
+        <div class="card-body">
+          <form method="post" action="/blog/<%= blog.id %>?_method=PATCH">
+            <div class="mb-3">
+              <h4>@<%= blog.username %></h4>
+            </div>
+            <div class="mb-3">
+              <h3><%= blog.title %></h3>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="content" name="content" placeholder="Type your blog content here..."><%= blog.content %></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Edit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<%- include("includes/footer.ejs") %>

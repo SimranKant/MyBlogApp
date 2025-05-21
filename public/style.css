@@ -1,0 +1,63 @@
+/* .card{
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.card-header{
+    font-size: 1.5rem;
+}
+
+form{
+    border: 2px solid black;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2.5rem;
+} */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+.card-header {
+        font-size: 1.75rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: #ffffff;
+        border-bottom: none;
+      }
+
+      label {
+        font-weight: 500;
+      }
+
+      textarea {
+        height: 150px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-bottom: auto;
+}
+
+.container{
+  flex: 1;
+}
