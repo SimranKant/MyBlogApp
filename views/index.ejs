@@ -3,11 +3,11 @@
   <div class="container flex-grow-1">
     <% for(let blog of blogs){ %>
     <div class="card my-3">
-      <div class="card-header">
-        <b><%= blog.username %></b> 
+      <div class="card-header" style="border-radius: 2rem;">
+        <b><%= blog.title %></b> 
       </div>
       <div class="card-body">
-        <h5 class="card-title"><%= blog.title %></h5>
+        <h5 class="card-title">@<%= blog.username %></h5>
         <p class="card-text"><%= blog.content %></p>
         <div class="d-flex gap-2">
           <a href="/blog/<%= blog.id %>/edit" class="btn btn-primary">Edit</a>
@@ -20,7 +20,7 @@
     </div>
   <% } %>
   <% if (blogs.length === 0) { %>
-  <div class="text-center my-5 p-4 border border-danger rounded bg-light">
+  <div class="text-center my-5 p-4 border border-danger rounded bg-tertiary">
     <h2 class="text-danger mb-3">No Match Found 😕</h2>
     <p class="lead text-secondary">Try different keywords or check your spelling.</p>
     <a href="/blog" class="btn btn-primary mt-3">View All Blogs</a>
