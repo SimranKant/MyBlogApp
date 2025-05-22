@@ -10,10 +10,10 @@
         <h5 class="card-title">@<%= blog.username %></h5>
         <p class="card-text"><%= blog.content %></p>
         <div class="d-flex gap-2">
-          <a href="/blog/<%= blog.id %>/edit" class="btn btn-primary">Edit</a>
+          <!-- <a href="/blog/<%= blog.id %>/edit" class="btn btn-primary">Edit</a>
           <form method="post" action="/blog/<%= blog.id %>?_method=DELETE">
             <button type="submit" class="btn btn-danger">Delete</button>
-          </form>
+          </form> -->
           <a href="/blog/<%= blog.id %>" class="btn btn-success">Open</a>
         </div>
       </div>
