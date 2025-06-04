@@ -44,7 +44,7 @@ app.get("/",(req,res)=>{
 });
 
 const sessionOptions = {
-  secret: "mysupersecretcode",
+  secret: process.env.SECRET_CODE,
   resave:false,
   saveUninitialized:true,
   cookie:{
