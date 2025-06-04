@@ -1,0 +1,178 @@
+body {
+  background-color: black;
+  font-family: "Bitter", serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(5, 197, 25, 0.749) !important;
+}
+
+.fa-pen-to-square {
+  color: green;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.nav-link {
+  color: green !important;
+  font-size: 1.5rem;
+}
+.nav-link:hover {
+  color: white !important;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px rgba(5, 197, 25, 0.749);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+
+.f-info-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  opacity: 1;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  border-top: 2px solid green;
+}
+
+/* Card */
+
+.card {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(6, 183, 41, 2);
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: black;
+  color: white;
+}
+
+.card-header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-bottom: none;
+  box-shadow: 0 0.5rem 1.5rem rgba(244, 241, 241, 0.2);
+  border-radius: 2rem;
+}
+
+.image {
+  width: 100% !important;
+  padding: 0px !important;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(6, 183, 41, 2);
+}
+
+/* Show PAge */
+
+.card-show {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(6, 183, 41, 2);
+  max-width: 700px;
+  background-color: black;
+  color: white;
+}
+
+.card-header-show {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-bottom: none;
+  box-shadow: 0 0.5rem 1.5rem rgba(244, 241, 241, 0.2);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.btns{
+  display: flex;
+  /* justify-content: space-around; */
+
+}
+
+.btn-show{
+  margin-right: 1rem;
+}
+
+/* Edit PAge */
+
+form label{
+  color: white;
+  font-weight: 800;
+}
+
+.comment{
+  margin-top: 2rem;
+  border: 2px solid white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.card-show-comm{
+  padding: 0.3rem;
+}
+
+.card-show-text{
+  font-size: 1rem;
+}
+
+.card-show-title{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(17, 168, 150);
+}
+
