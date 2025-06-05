@@ -41,9 +41,6 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("/blogs");
-});
 
 const store = MongoStore.create({
   mongoUrl: dbUrl,
@@ -85,6 +82,11 @@ app.use((req, res, next) => {
   res.locals.currUser = req.user;
   next();
 });
+
+app.get("/", (req, res) => {
+  res.render("/blogs");
+});
+
 
 app.use("/blogs", blogsRouter);
 app.use("/blogs/:id/comments", commentsRouter);
