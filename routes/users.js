@@ -2,17 +2,16 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/users.js");
 const wrapAsync = require("../utils/wrapAsync.js");
-const ExpressError = require("../utils/ExpressError.js");
 const passport = require("passport");
 const { saveRedirectUrl } = require("../middleware.js");
 const Controller = require("../controllers/comments.js");
-const { renderRegisterForm, getLoginForm, login, logout } = require("../controllers/users.js");
+const { renderRegisterForm, getLoginForm, login, logout,register } = require("../controllers/users.js");
 
 router.get("/register", renderRegisterForm);
 
 router.post(
   "/register",
-  wrapAsync(User.register)
+  wrapAsync(register)
 );
 
 router.get("/login",getLoginForm);
